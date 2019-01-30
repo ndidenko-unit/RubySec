@@ -7,6 +7,16 @@ class ParserController < ApplicationController
   end
 
   def rubysec
+    before_count = Post.count
+    all_data = parse_all_data
+    if all_data.count > before_count
+      new_posts = all_data.last(all_data.count - before_count)
+      Post.create(new_posts)
+    end
+    binding.pry
+  end
+
+  def parse_all_data
     page = 1
     all_data = []                                        #data from all pages
     loop do
@@ -25,12 +35,11 @@ class ParserController < ApplicationController
           data << " "                                    #empty CVE
         end
       end
-      break if data.empty? || Post.count > 0             #parse all page only first time
+      break if data.empty?
       all_data += data
       page += 1
     end
-    all_data = all_data.in_groups_of(5).reverse.
+    all_data.in_groups_of(5).reverse.
         map { |arr| [:date, :rubygem, :link, :title, :cve].zip(arr).to_h }
-    binding.pry
   end
 end

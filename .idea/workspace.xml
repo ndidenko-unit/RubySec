@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="da5fc8d9-27d4-4de5-9ce4-bffef6122811" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/parser.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/parser.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/parser_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/parser_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/post.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/post.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/assets.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -40,7 +34,7 @@
           <entry key="css" value="1" />
           <entry key="erb" value="2" />
           <entry key="gitignore" value="1" />
-          <entry key="rb" value="6" />
+          <entry key="rb" value="9" />
           <entry key="ruby-version" value="1" />
         </counts>
       </usages-collector>
@@ -49,7 +43,7 @@
           <entry key="CSS" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="RHTML" value="2" />
-          <entry key="Ruby" value="7" />
+          <entry key="Ruby" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -57,7 +51,7 @@
           <entry key="Gemfile" value="16" />
           <entry key="erb" value="119" />
           <entry key="gitignore" value="17" />
-          <entry key="rb" value="1003" />
+          <entry key="rb" value="1216" />
           <entry key="ruby-version" value="2" />
         </counts>
       </usages-collector>
@@ -65,7 +59,7 @@
         <counts>
           <entry key="PLAIN_TEXT" value="19" />
           <entry key="RHTML" value="119" />
-          <entry key="Ruby" value="1019" />
+          <entry key="Ruby" value="1232" />
         </counts>
       </usages-collector>
     </session>
@@ -93,8 +87,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/parser_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/post.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -160,8 +163,9 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/parser/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/post.rb" />
         <option value="$PROJECT_DIR$/app/controllers/parser_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/parser.rb" />
+        <option value="$PROJECT_DIR$/app/models/post.rb" />
       </list>
     </option>
   </component>
@@ -252,6 +256,23 @@
               <item name="rubysec" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
               <item name="migrate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rubysec" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rubysec" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rubysec" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rubysec" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rubysec" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rubysec" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="tasks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rubysec" type="b2602c69:ProjectViewProjectNode" />
@@ -398,12 +419,12 @@
       <option name="presentableId" value="Default" />
       <updated>1548772578764</updated>
       <workItem from="1548772580115" duration="2378000" />
-      <workItem from="1548846877536" duration="15529000" />
+      <workItem from="1548846877536" duration="19472000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17907000" />
+    <option name="totallyTimeSpent" value="21850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1377" extended-state="6" />
@@ -468,13 +489,6 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/post.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -503,10 +517,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/parser.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/post.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/parser_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
