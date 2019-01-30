@@ -19,6 +19,8 @@ class ParserController < ApplicationController
         data << td.children[1].children.to_s
       end
     end
-    @data = data.in_groups_of(5).map { |arr| [:date, :rubygem, :link, :title, :cve].zip(arr).to_h }
+    @data = data.in_groups_of(5).
+        map { |arr| [:date, :rubygem, :link, :title, :cve].zip(arr).to_h }.reverse
+    binding.pry
   end
 end
