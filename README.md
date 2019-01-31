@@ -1,24 +1,26 @@
-# README
+# Rubysec
+This Rails-based application parses the data from https://rubysec.com/advisories every 10 minutes, saves it in a database, and notifies the registered users once new information has been added. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation and usage
 
-Things you may want to cover:
+Install and start Redis server.
 
-* Ruby version
+```
+redis-server
+```
 
-* System dependencies
+Clone repository and run following commands:
+```
+cd rubysec
+bundle install
+rake db:migrate
+rails s
+```
 
-* Configuration
+Start Sidekiq in new terminal window.
+```
+cd rubysec
+bundle exec sidekiq
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You can try app here: http://0.0.0.0:3000/
