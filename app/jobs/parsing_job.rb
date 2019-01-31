@@ -12,6 +12,7 @@ class ParsingJob < ApplicationJob
     if all_data.count > before_count
       new_posts = all_data.last(all_data.count - before_count)
       Post.create(new_posts)
+      UserMailer.new_data(new_posts).deliver
     else
       Post.last.update(updated_at: Time.now)
     end

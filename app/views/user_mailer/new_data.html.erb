@@ -1,0 +1,12 @@
+<h2>New advisories:</h2>
+
+<%= @data.each do |post| %>
+  <br>
+  <p><strong>Date: </strong><%= post[:date]%></p>
+  <p><strong>Date: </strong><%= post[:rubygem]%></p>
+  <p><strong>Date: </strong><a href="<%= "https://rubysec.com#{post[:link]}" %>"><%= post[:title] %></a></p>
+  <p><strong>CVE: </strong><%= post[:cve]%></p>
+  <p><a href="<%= "https://rubysec.com#{post[:link]}" %>">Show more details...</a></p>
+  <br>
+<% end %>
+  <p>With love from ndidenko (c)</p>

@@ -1,0 +1,12 @@
+New advisories:
+
+<%= @data.each do |post| %>
+
+  Date: <%= post[:date]%>
+  Rubygem: <%= post[:rubygem]%>
+  Title: <%= post[:title] %>
+  Show more details...
+  <%= "https://rubysec.com#{post[:link]}" %>
+
+<% end %>
+With love from ndidenko (c)
