@@ -15,3 +15,24 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+  padding-top: 70px;
+  background: #fcfeff;
+}
+
+.navbar {
+  border: none;
+  background-color: #005686;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: white !important;
+}
+
+.center-form {
+  width: 480px;
+  margin-top: 80px;
+}
