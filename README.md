@@ -24,3 +24,13 @@ bundle exec sidekiq
 ```
 
 You can try app here: http://0.0.0.0:3000/
+
+What I used:
+```
+Nokogiri
+Sidekiq
+Device
+Action Mailer
+Active Jobs
+Bootstrap
+```
